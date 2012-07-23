@@ -3,7 +3,11 @@ using System.Collections;
 
 public class FollowMouse : MonoBehaviour {
 
-	public Camera camera;
+	private Camera camera;
+	
+	void Start() {
+		camera = Camera.mainCamera;
+	}
 	
 	// Update is called once per frame
 	void Update () {
